@@ -1,26 +1,12 @@
 {
-    "version": 2,
-        "builds": [
-          {
-            "src": "package.json",
-            "use": "@vercel/static-build",
-            "config": {
-              "distDir": "build"
-            }
-          }
-        ],
-    "routes": [
+    "builds": [
       {
-        "src": "/api/(.*)",
-        "dest": "/backend/api/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/frontend/$1"
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
       }
-    ],
-    "env": {
-      "NODE_OPTIONS": "--openssl-legacy-provider"
-    }
+    ]
   }
   
