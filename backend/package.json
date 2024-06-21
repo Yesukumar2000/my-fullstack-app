@@ -1,0 +1,13 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Backend for my full-stack app",
+    "main": "api/hello.js",
+    "scripts": {
+      "start": "node api/hello.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
